@@ -36,7 +36,6 @@ $data = mysqli_fetch_assoc($query);
     <h1>Update Profile</h1>
     <div class="row">
       <div class="col-md-6">
-      <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Profile"></i>
       <?=@$pesan?>
         <form action="" method="post">
           <div class="form-group">
@@ -46,7 +45,7 @@ $data = mysqli_fetch_assoc($query);
           </div>
           <div class="form-group">
             <label for="">JABATAN</label>
-            <input name="jabatan" type="text" value="<?=$data['Jabatan']?>" class="form-control" placeholder="Pelajar">
+            <input name="jabatan" type="text" value="<?=$data['Jabatan']?>" class="form-control" placeholder="Siswa">
           </div>
           <div class="form-group">
             <label for="">PERUSAHAAN</label>

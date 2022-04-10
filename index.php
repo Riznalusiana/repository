@@ -70,8 +70,8 @@
       <!-- jumbotron -->
       <section id="home" class="jumbotron text-center">
         <img src="<?= $user["Gambar"];?>" alt="" width="200" class="rounded-circle"/>
-        <h1 class="display-4" data-aos="fade-right"> <?= $user["Nama"];?> </h1>
-        <p class="lead"><?= $user["Jabatan"];?> | <?= $user["Perusahaan"];?></p>
+        <h1 class="display-4" data-aos="zoom-in-up" data-aos-duration="2000"> <?= $user["Nama"];?> </h1>
+        <p class="lead" data-aos="zoom-in-up" data-aos-duration="2000"><?= $user["Jabatan"];?> | <?= $user["Perusahaan"];?></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="WHITE" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,53.3C560,43,640,85,720,101.3C800,117,880,107,960,101.3C1040,96,1120,96,1200,106.7C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
       <!-- akhir jumbotron-->
@@ -80,10 +80,10 @@
           <h2>about</h2>
         </div>
         <div class="row justify-content-center fs-5">
-          <div class="col-sm-4">
+          <div class="col-sm-4" data-aos="fade-right" data-aos-duration="2000">
             <p><?= $about["Column1"];?></p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" data-aos="fade-left" >
             <p><?= $about["Column2"];?></p>
           </div>
         </div>
@@ -95,13 +95,14 @@
         <div class="row text-center">
           <h2>Projects Me</h2>
         </div>
-         <div class="row justify-content-center">
+         <div class="row justify-content-center" >
             
          <?php foreach ($project as $pro):?>
          
-           <div class="col-sm-4 mb-4">
+           <div class="col-sm-4 mb-4"
+            data-aos="flip-left" data-aos-duration="2000">
             <div class="card" style="width: 18rem;">
-              <img src="<?= $pro["Foto"];?>" class="card-img-top" alt="Ade.jpg">
+              <img src="Foto/<?= $pro["Foto"];?>" class="card-img-top" alt="Ade.jpg">
               <div class="card-body">
                 <h1><?= $pro["Nama_p"];?></h1>
                 <p class="card-text"><?= $pro["Ket"];?></p>
@@ -121,7 +122,7 @@
         <div class="row text-center">
           <h2>contact</h2>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="flip-up"data-aos-duration="2000">
           <div class="col-sm-6">
           <form method="POST">
             <div class="mb-3">
